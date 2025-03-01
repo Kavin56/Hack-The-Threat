@@ -1,10 +1,4 @@
-Here's the updated **README.md** with the mention of the **Gemini Flash 1.5** model used for generating the **Mitigation Strategy Report**. 🚀  
 
----
-
-## 📜 **README.md** (Updated with Gemini Flash 1.5 Model)  
-
-```md
 # Hack The Threat - Cybersecurity & AI Hackathon 🛡️🤖
 
 ## Project Overview 🌐🔍
@@ -92,5 +86,3 @@ print(response.text)
 3. **Updated Feature List to Highlight Gemini’s Role.**
 4. **Ensured "How to Run" Steps Are Present for Each Test.**
 5. **Formatted the README for Better Readability.**
-
-This should now be **complete and polished**! 🚀🔥 Let me know if you need anything else!
