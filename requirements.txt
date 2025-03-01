@@ -1,0 +1,14 @@
+streamlit
+pandas
+json
+random
+datetime
+pdfkit
+beautifulsoup4
+openai
+plotly
+subprocess
+pytest
+requests
+loguru
+locust
