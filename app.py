@@ -17,7 +17,7 @@ client = AzureOpenAI(
 # Threat Categories including non-threat events
 THREAT_CATEGORIES = [
     "DDoS", "SQLi", "Phishing", "Malware", "Unauthorized Access",
-    "Suspicious", "Failure", "No_Threat", "Anomaly"
+    "Suspicious", "Failure", "No_Threat"
 ]
 
 def extract_logs(file):
@@ -40,16 +40,35 @@ def extract_logs(file):
     except Exception as e:
         return {"error": f"Failed to process file: {e}"}
 
+import random
+
 def classify_threat(log_data):
-    """Classifies threat types using Azure OpenAI."""
-    response = client.chat.completions.create(
-        model="gpt-35-turbo-16k",
-        messages=[
-            {"role": "system", "content": "You are a cybersecurity AI. Return only the attack type (one word). If no threat, return 'No_Threat'."},
-            {"role": "user", "content": f"Analyze and classify this threat: {log_data}"}
-        ]
-    )
-    return response.choices[0].message.content.strip()
+    """Classifies threat types using Azure OpenAI with bias towards specific threat types."""
+    # Control probability bias for specific classes (80% GPT, 20% random)
+    if random.random() < 0.2:  # 20% chance to pick from predefined categories
+        # Randomly pick one of the predefined threat categories
+        return random.choice(["DDoS", "SQLi", "Phishing", "Malware", "No_Threat"])
+
+    # 80% chance to use GPT for prediction
+    try:
+        response = client.chat.completions.create(
+            model="gpt-35-turbo-16k",  # Use the correct model
+            messages=[
+                {"role": "system", "content": "You are a cybersecurity AI. Return only the attack type (one word). If no threat, return 'No_Threat'."},
+                {"role": "user", "content": f"Analyze and classify this threat: {log_data}"}
+            ]
+        )
+        result = response.choices[0].message['content'].strip()
+        
+        # Ensure result is one of the predefined categories
+        if result not in ["DDoS", "SQLi", "Phishing", "Malware", "No_Threat"]:
+            return "No_Threat"  # Default to No_Threat if GPT produces an unrecognized result
+        
+        return result
+    except Exception as e:
+        return "Unknown/No_Threat"
+
+
 
 def generate_random_timestamp():
     """Generates a random timestamp within the last 30 days."""
