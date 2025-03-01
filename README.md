@@ -78,11 +78,3 @@ print(response.text)
 - **[JAGAADHEP U K]** - Streamlit page & Visualization  
 ```
 
----
-
-### **✅ Key Updates:**
-1. **Explicitly Mentioned Gemini Flash 1.5 for Report Generation.**
-2. **Added Code Snippet for Gemini Flash 1.5 Integration.**
-3. **Updated Feature List to Highlight Gemini’s Role.**
-4. **Ensured "How to Run" Steps Are Present for Each Test.**
-5. **Formatted the README for Better Readability.**
