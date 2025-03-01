@@ -21,7 +21,6 @@ This project is built as part of the "Hack The Threat" cybersecurity hackathon, 
 
 ## Features ⚡️
 
-- **Honeypots:** Deceptive systems designed to lure and analyze potential attacks.
 - **Threat Classification:** Uses AI to detect and classify security threats in log files with OpenAI's GPT-3.5-turbo-16k.
 - **Real-time Monitoring:** Tracks website uptime and potential security breaches.
 - **Automated Testing & Analysis:** Utilizes various tools to assess security.
