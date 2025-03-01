@@ -8,6 +8,7 @@ This project is built as part of the "Hack The Threat" cybersecurity hackathon, 
    - Developed using HTML, CSS, JavaScript, and React.
    - Hosted on Netlify for easy deployment.
    - Used for testing various security vulnerabilities and resilience against cyber threats.
+     ![Demo Website](images/demo.png)
 
 2. **Threat Classification System (Streamlit App)**
    - Built with Streamlit to analyze log files for security threats.
