@@ -4,7 +4,6 @@
 
 ## Project Overview 🌐🔍
 
-This project is built as part of the "Hack The Threat" cybersecurity hackathon, focusing on AI-driven threat detection and security analysis. It consists of two main components:
 
 1. **Demo Website (Testing Environment)** 🌍🖥️
 
