@@ -195,7 +195,3 @@ python generate_mitigation_report.py --logfile logs/security_logs.json
 
 ---
 
-
-change readme with this mitigation strategy report feature also and at last give some sample images from 
-
-images folder with final_1, final_2, final_3 all png files
