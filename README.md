@@ -102,7 +102,6 @@ export AZURE_ENDPOINT="https://your-azure-endpoint.openai.azure.com/"
 
 ## Sample Screenshots 🎨
 
-&#x20;&#x20;
 
 ---
 
