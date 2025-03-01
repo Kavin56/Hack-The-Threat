@@ -161,11 +161,31 @@ response = client.completions.create(
   ```
 
 ---
+## 🔒 **Mitigation Strategy Report Feature**
 
-## Future Enhancements 🔮
-- Implement more AI models for threat detection.
-- Integrate real-time alerts for detected threats.
+After threat detection, the **Mitigation Strategy Report** provides:
+- **Risk Impact Analysis:** AI evaluates the severity of the detected threat.
+- **Recommended Fixes:** Suggested actions to fix vulnerabilities.
+- **Severity Rating:** AI assigns a risk score based on impact.
+
+### **How to Run**
+```bash
+python generate_mitigation_report.py --logfile logs/security_logs.json
+```
+
+### **Sample Output**
+![Mitigation Report](images/final_1.png)  
+![Threat Details](images/final_2.png)  
+![Recommended Fixes](images/final_3.png)  
+
+---
+
+## 🔮 **Future Enhancements**
+- Implement additional AI models for deeper threat detection.
+- Integrate **real-time alerts** for security threats.
 - Expand honeypot functionalities to log attacker behavior in detail.
+
+---
 
 ## Contributors 🤝
 - **[KAVINKUMAR VS]** - AI & Security Engineering
