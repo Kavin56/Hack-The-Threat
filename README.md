@@ -5,7 +5,7 @@
 This project is built as part of the "Hack The Threat" cybersecurity hackathon, focusing on AI-driven threat detection and security analysis. It consists of two main components:
 
 1. **Demo Website (Testing Environment)**
-   - Developed using HTML, CSS, JavaScript, and React.
+   - Developed using HTML, CSS and JavaScript.
    - Hosted on Netlify for easy deployment.
    - Used for testing various security vulnerabilities and resilience against cyber threats.
      ![Demo Website](images/demo.png)
