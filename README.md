@@ -36,7 +36,7 @@ This project is built as part of the "Hack The Threat" cybersecurity hackathon, 
   locust -f tests/locustfile.py --host https://taupe-tanuki-66c44a.netlify.app/
   ```
 - **Sample Output:** 
-  ![Locust Test Results](tests/sample_output/1_1.png)
+  ![Locust Test Results](tests/sample_output/2_1.png)
   ![Locust Test Results](tests/sample_output/1_2.png)
 
 ### 2. Loguru (Logging & Monitoring) 📝🔎
