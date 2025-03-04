@@ -187,11 +187,5 @@ python generate_mitigation_report.py --logfile logs/security_logs.json
 
 ---
 
-## Contributors 🤝
-- **[KAVINKUMAR VS]** - AI & Security Engineering
-- **[RAKSHAN A]** - Development & Security Analysis
-- **[MANI SHANKAR SG]** - Demo Website & Deployment
-- **[JAGAADHEP U K]** - Streamlit page & Visualization
 
----
 
