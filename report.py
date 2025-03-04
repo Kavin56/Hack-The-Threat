@@ -9,7 +9,7 @@ from reportlab.lib.utils import simpleSplit
 st.set_page_config(page_title="Threat Report", layout="wide")
 
 # ✅ Configure Gemini API
-api_key = "AIzaSyD-dLkR-ggyEHIMBAZ_34MJiBHQVfyxOAc"
+api_key = "your_gemini_api_key"
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
