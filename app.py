@@ -10,8 +10,8 @@ import plotly.express as px
 
 # Initialize Azure OpenAI Client
 client = AzureOpenAI(
-    azure_endpoint='https://chen-m44hs78n-swedencentral.cognitiveservices.azure.com/',
-    api_key='CeOe3qZF4f3j45XfgDPJ1FWGzKMPkgYtpjSgi0jkhyiH1EAi5s8fJQQJ99AKACfhMk5XJ3w3AAAAACOGihSC',
+    azure_endpoint='your_endpoint',
+    api_key='your_azure_api_key',
     api_version='2024-02-15-preview'
 )
 
