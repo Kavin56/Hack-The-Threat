@@ -135,7 +135,7 @@ response = client.completions.create(
     max_tokens=1000
 )
 
-
+```
 ### Step 3: Store Credentials Securely
 - **Azure API Key & Endpoint**: It is important not to hardcode sensitive information like your **API key** and **Azure endpoint** in your source code. Instead, you can use environment variables or a secure vault to store these credentials.
   
